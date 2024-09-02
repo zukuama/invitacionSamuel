@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="source/img/globos.ico" type="image/x-icon">
+    <title>Invitación Cumpleaños Samuel</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Asegura que el video y la imagen ocupen toda la pantalla */
+        html,
+        body {
+            background-image: url('source/img/fondoAnimales.webp');
+            /* Ruta de la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .video,
+        .ubicacion {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        video,
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sección Video -->
+        <div class="row video">
+            <div class="col-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!-- Video que se reproduce automáticamente -->
+                    <video class="embed-responsive-item" autoplay muted loop controls>
+                        <source src="source/cumpleSamuel-24mb.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Ubicación -->
+        <div class="row ubicacion">
+            <div class="col-12">
+                <div class="p-3 border bg-light text-center">
+                    <!-- Enlace que lleva a la ubicación en Google Maps -->
+                    <a href="https://maps.app.goo.gl/pkaAgE9G2ugNGWbo9" target="_blank">
+                        <img src="source/img/samuUbicacion.webp" alt="Foto Samuel con ubicación" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlaces a JavaScript de Bootstrap y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
